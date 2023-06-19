@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Forntend Mentor | Product preview card component coding challenge solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/product-preview-card-component-Q8IHkeVAc0))
 - Live Site URL: [Product preview card component](https://shohanojjaman.github.io/ProductPreviewCardComponent/)
 
 ## My process
