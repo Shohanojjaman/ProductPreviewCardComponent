@@ -32,8 +32,129 @@ svg {
     /* Fonts */
     --ff-fraunes: 'Fraunces', serif;
     --ff-montserrat: 'Montserrat', sans-serif;
+
+    --fw-medium: 500;
+    --fw-bold: 700;
 }
 
 body {
     font-size: 14px;
+    font-family: var(--ff-montserrat);
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+}
+
+section.card {
+    max-width: 600px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--White);
+    margin: 20px;
+}
+
+.card-img {
+    background: url(./images/image-product-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-text {
+    padding: 2rem;
+}
+
+.card-text h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+.card-text h1 {
+    font-family: var(--ff-fraunes);
+    font-weight: var(--fw-bold);
+    font-size: 31px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: var(--Very-dark-blue);
+}
+
+.card-text p {
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+}
+
+p.price {
+    margin-top: 30px;
+    line-height: 1;
+
+}
+
+p.price span {
+    font-size: 31px;
+    font-family: var(--ff-fraunes);
+    color: var(--drak-cyan);
+    margin: 0 20px 0 0;
+    vertical-align: sub;
+}
+
+.card-text button {
+    position: relative;
+    background: var(--drak-cyan);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 0;
+    text-align: center;
+    color: var(--White);
+    margin-top: 30px;
+    font-weight: var(--fw-bold);
+    transition: 0.3s;
+
+}
+
+.card-text button:hover {
+    background: hsl(158, 43%, 17%);
+}
+
+.card-text button svg {
+    position: absolute;
+    left: 23%;
+}
+
+@media (max-width:512px) {
+    section.card {
+        max-width: 345px;
+        min-height: 600px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .card-img {
+        background: url(./images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card-text h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .card-text h4 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .card-text button {
+        margin-top: 20px;
+    }
 }
